@@ -8,7 +8,7 @@ export default function FirstSlide() {
     const navigate = useNavigate()
 
     const goToSecondSlide=()=>{
-        window.location.href="http://localhost:3002/SecondSlide"
+        window.location.href="https://62acf8abc297460009e79cf3--peppy-bombolone-bc61b0.netlify.app/SecondSlide"
     }
 
     var i = 0;

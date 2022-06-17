@@ -10,7 +10,7 @@ export default function SecondSlide() {
 
   const goToThirdSlide = () =>{
 
-    window.location.href="http://localhost:3002/ThirdSlide"
+    window.location.href="https://62acf8abc297460009e79cf3--peppy-bombolone-bc61b0.netlify.app/ThirdSlide"
 
   }
   return (
