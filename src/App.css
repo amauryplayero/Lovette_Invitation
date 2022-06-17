@@ -1,0 +1,112 @@
+body{
+  background-color: rgb(54, 56, 60);
+  font-family: 'Andada Pro', serif;
+font-family: 'DM Sans', sans-serif;
+font-family: 'Inter', sans-serif;
+font-family: 'Readex Pro', sans-serif;
+}
+
+.typewriter p {
+  color: #fff;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
+
+.everythingContainer{
+  display: flex;
+  border: red solid;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.invitationText{
+  text-align:center;
+  color: white;
+}
+
+.logoImg{
+  height: 120px;
+}
+
+#yesNoContainer{
+  /* border: red solid; */
+  width: 300px;
+  display: flex;
+  justify-content:space-between;
+}
+
+#yes{
+  border: none;
+  height: 40px;
+  width: 100px;
+  border-radius: 15px;
+  background-color: rgb(187, 165, 187);
+}
+#no{
+  border: none;
+  height: 40px;
+  width: 100px;
+  border-radius: 15px;
+  background-color: rgb(187, 165, 187);
+}
+
+#nameContainer{
+  margin-top: 10vh;
+}
+
+#nameInputBox{
+  background-color: rgb(225, 226, 166);
+  border: none;
+  height: 40px;
+  border-radius: 20px;
+}
+
+#submitBtn{
+  background-color: rgb(194, 198, 137);
+  border: none;
+  height: 40px;
+  border-radius: 20px;
+  margin-left: 3px;
+
+}
+
+.whatUThink{
+  background-color: rgb(173, 147, 197);
+  border: none;
+  height: 40px;
+  border-radius: 20px;
+  margin-left: 3px;
+
+}
+
+/*  */
+
+/*  */
+
+.link:link{
+  color:rgb(173, 147, 197)
+}
+.link:visited{
+  color:rgb(173, 147, 197)
+}
