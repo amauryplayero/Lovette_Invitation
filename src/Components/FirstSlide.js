@@ -7,8 +7,13 @@ export default function FirstSlide() {
    
     const navigate = useNavigate()
 
+    
+    console.log(window.location.href)
     const goToSecondSlide=()=>{
-        window.location.href="https://62acf8abc297460009e79cf3--peppy-bombolone-bc61b0.netlify.app/SecondSlide"
+        console.log(window.location.href)
+  
+        let url = window.location.href
+        window.location.href= `${window.location.href}SecondSlide`
     }
 
     var i = 0;
@@ -17,6 +22,8 @@ export default function FirstSlide() {
   and byob. let me know if you'd like to take anyone along.`
     var speed = 50;
     let textInElement = ""
+
+    let componentShown = <FirstSlide />
     
     
 

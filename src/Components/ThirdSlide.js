@@ -15,7 +15,7 @@ import keys from './emailkey'
 // });
 
 export default function ThirdSlide() {
-  console.log(keys.TEMPLATE_ID)
+  // console.log(keys.TEMPLATE_ID)
 
   const [decision, setDecision] = useState()
   emailjs.init("xp8-EUgAIHSEng7hi");

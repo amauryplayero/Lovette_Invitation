@@ -7,10 +7,11 @@ export default function SecondSlide() {
   const navigate = useNavigate()
 
 
-
+console.log(typeof(window.location.href))
   const goToThirdSlide = () =>{
-
-    window.location.href="https://62acf8abc297460009e79cf3--peppy-bombolone-bc61b0.netlify.app/ThirdSlide"
+    let plainUrl = window.location.href.replace("SecondSlide", "")
+    console.log(plainUrl)
+    window.location.href=`${plainUrl}ThirdSlide`
 
   }
   return (
