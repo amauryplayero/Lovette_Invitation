@@ -74,8 +74,15 @@ font-family: 'Readex Pro', sans-serif;
   height: 40px;
   border-radius: 20px;
   margin-left: 3px;
+  color:rgb(54, 56, 60);
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 20px 0px 20px;
 
 }
+
 
 /*  */
 
