@@ -35,8 +35,10 @@ console.log(e)
     const name = e.target[0].value
       emailjs.sendForm(keys.SERVICE_ID, keys.TEMPLATE_ID, form.current, apiKey)
     .then((result) => {
-      console.log(result)
-    // alert("Message Sent, We will get back to you shortly", result.text);
+     
+    alert("thanks!");
+  
+
     },
     (error) => {
     alert("An error occurred, Please try again", error.text);
