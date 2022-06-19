@@ -19,6 +19,7 @@ font-family: 'Readex Pro', sans-serif;
 .invitationText{
   text-align:center;
   color: white;
+  margin: 0 20px 20px 20px; 
 }
 
 .logoImg{

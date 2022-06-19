@@ -4,27 +4,20 @@ import {useState, useRef} from 'react'
 import emailjs from '@emailjs/browser';
 // import { SMTPClient } from 'emailjs';
 import keys from './emailkey'
-// import SERVICE_ID from './emailkey'
-
-
-// const client = new SMTPClient({
-// 	user: 'amaury',
-// 	password: 'Musica989898',
-// 	host: 'smtp.amaury.lopezdiaz@gmail.com',
-// 	ssl: true,
-// });
 
 export default function ThirdSlide() {
   // console.log(keys.TEMPLATE_ID)
 
   const [decision, setDecision] = useState()
+
   emailjs.init("xp8-EUgAIHSEng7hi");
   const form = useRef();
-
+  
   let apiKey = "xp8-EUgAIHSEng7hi"
-
+  
   let name
   let email
+  let noDecision
   
 
   const handleYes = (e) => {
@@ -49,12 +42,14 @@ console.log(e)
     alert("An error occurred, Please try again", error.text);
   });
   }
-  const handleNo = () => {
+  const handleNo = (e) => {
+    setDecision("no")
+    // e.preventDefault()
     alert('thanks!')
 
 
   }
-
+console.log(decision)
   if(decision==='yes'){
   name = 
   <form ref={form} onSubmit={(e)=>handleSubmit(e)}id="nameContainer">
@@ -65,9 +60,11 @@ console.log(e)
   
 
   
-  }else{
+  }else if(decision==="no"){
 
-  }
+    
+
+  }else {}
 
   return (
     <>
@@ -78,9 +75,12 @@ console.log(e)
     <p className="invitationText">will i see u?</p>
     <div id="yesNoContainer">
       <button id="yes" onClick={(e)=>handleYes(e)}>yes</button>
-      <button id="no" onClick={()=>handleNo()}>no</button>
+      <button id="no" onClick={(e)=>handleNo(e)}>no</button>
     </div>
     {name}
+    </div>
+    <div>
+      {noDecision}
     </div>
     </>
   )
