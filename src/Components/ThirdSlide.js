@@ -68,7 +68,7 @@ console.log(decision)
 
   return (
     <>
-    <div className="everythingContainer">
+    <div className="everythingContainer" id="section3">
     <img src="https://i.imgur.com/rpdn1W8.jpg" className="logoImg"></img>
    
 

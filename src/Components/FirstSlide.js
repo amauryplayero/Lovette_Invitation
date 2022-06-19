@@ -38,7 +38,7 @@ export default function FirstSlide() {
             and byob. let me know if you'd like to take anyone along
             </p>
         </div>
-    <button onClick={()=>goToSecondSlide()} className="whatUThink">tap me to learn more abt the theme.</button>
+    <a href="#section2" className="whatUThink">tap me to learn more abt the theme.</a>
     </div>
 
    
