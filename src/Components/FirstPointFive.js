@@ -11,7 +11,6 @@ export default function FirstSlide() {
     console.log(window.location.href)
     const goToSecondSlide=()=>{
         console.log(window.location.href)
-  
         let url = window.location.href
         window.location.href= `${window.location.href}SecondSlide`
     }
@@ -30,13 +29,15 @@ export default function FirstSlide() {
   return (
       <>
     {/* <div>FirstSlide</div> */}
-    <div className="everythingContainer">
+    <div className="everythingContainer" id="section1.5">
     <img src="https://i.imgur.com/rpdn1W8.jpg" className="logoImg"></img>
         <div>
-             <p className="invitationText">Hi! You’re invited to join me July 18th at Prospect park to celebrate my 20th bday❤ 
+             <p className="invitationText"> 
+             This event will be held on the lawn near the entrance of the park 
+             and pls bring any snacks drinks that you would like! 
             </p>
         </div>
-    <a href="#section1.5" className="whatUThink">Where???</a>
+    <a href="#section2" className="whatUThink">tap here to learn more abt the theme</a>
     </div>
 
    

@@ -3,7 +3,7 @@ import './App.css';
 import FirstSlide from './Components/FirstSlide';
 import SecondSlide from './Components/SecondSlide';
 import ThirdSlide from './Components/ThirdSlide';
-
+import FirstPointFive from './Components/FirstPointFive'
 
 function App() {
 
@@ -13,6 +13,7 @@ function App() {
   return (
     <div className="App">
      <FirstSlide />
+     <FirstPointFive />
      <SecondSlide />
      <ThirdSlide />
     </div>
