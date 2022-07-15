@@ -2,7 +2,7 @@ import React from 'react'
 import {useState, useRef} from 'react'
 
 import emailjs from '@emailjs/browser';
-// import { SMTPClient } from 'emailjs';
+
 import keys from './emailkey'
 
 export default function ThirdSlide() {
@@ -23,22 +23,22 @@ export default function ThirdSlide() {
   const handleYes = (e) => {
     setDecision('yes')
     e.preventDefault(); // Prevents default refresh by the browser
-console.log(e)
+    console.log(e)
     console.log('hai')
  
 
 
   }
-  const handleSubmit = (e) =>{
+  const handleNameSubmit = (e) =>{
     e.preventDefault()
     console.log(e.target[0].value)
-    const name = e.target[0].value
+    let nameInput = e.target[0].value
       emailjs.sendForm(keys.SERVICE_ID, keys.TEMPLATE_ID, form.current, apiKey)
     .then((result) => {
-     
-    alert("thanks!");
-  
-
+    
+    name = <p>thanks!</p>
+    alert("thanks! see u there")
+    //
     },
     (error) => {
     alert("An error occurred, Please try again", error.text);
@@ -51,12 +51,12 @@ console.log(e)
 
 
   }
-console.log(decision)
+
   if(decision==='yes'){
   name = 
-  <form ref={form} onSubmit={(e)=>handleSubmit(e)}id="nameContainer">
-  <input placeholder="name" name="person" id="nameInputBox"></input>
-  <input type='submit' id="submitBtn"></input>
+  <form ref={form} onSubmit={(e)=>handleNameSubmit(e)}id="nameContainer">
+    <input placeholder="name" name="person" id="nameInputBox"></input>
+    <input type='submit' id="submitBtn"></input> 
   </form>
  
   
